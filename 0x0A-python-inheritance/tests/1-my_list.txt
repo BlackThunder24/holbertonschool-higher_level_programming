@@ -1,0 +1,44 @@
+Module ``1-My_list``
+
+Import Class
+
+    >>> MyList = __import__('1-my_list').MyList
+
+
+Check empty list:
+    >>> Nl = MyList()
+    >>> Nl.print_sorted()
+    []
+
+Add item to list:
+    >>> Nl = MyList()
+    >>> Nl.append(9)
+    >>> Nl.append(7)
+    >>> Nl.append(6)
+    >>> Nl.append(8)
+
+Print list:
+    >>> print(Nl)
+    [9, 7, 6, 8]
+
+Print sorted list
+    >>> Nl.print_sorted()
+    [6, 7, 8, 9]
+
+
+Add negative numbers:
+    >>> Nl = MyList()
+    >>> Nl.append(-1)
+    >>> Nl.append(-4)
+    >>> Nl.append(-2)
+    >>> Nl.append(-3)
+    >>> Nl.append(-5)
+
+Print list
+    >>> print(Nl)
+    [-1, -4, -2, -3, -5]
+
+Print sorted negative numbers
+    >>> Nl.print_sorted()
+    [-5, -4, -3, -2, -1]
+
